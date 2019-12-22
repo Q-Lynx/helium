@@ -1,6 +1,6 @@
 import random
-#początek programu jest na końcu, tu napisałam najpierw funkcje
 #Heads or tails
+#początek jest niżej
 def heads_or_tails():
     rzut = ["head", "tail"]
     wynik = random.choice(rzut)
@@ -9,7 +9,7 @@ def heads_or_tails():
 #Temperature Converter
 def convert_temperature():
     odpowiedz2 = input("Do you want to convert temperature? ")
-    if odpowiedz2("yes"):
+    if odpowiedz2 == "yes":
         zgoda = input("Celcius to Kelvin or Kelvin to Celcius? ")
         if zgoda("Celcius to Kelvin"):
             temperatura_w_celcjuszach = input("Write the value. ")
@@ -20,7 +20,7 @@ def convert_temperature():
             celcjusz = temperatura_w_kelvinach - 273, 15
             print(celcjusz)
     input("Fahrenheits? Fahrenheits? Who the fck cares about Fahrenheits?")
-    if odpowiedz2("no"):
+    if odpowiedz2 == "no":
         age_in_seconds()
 
 #Age in seconds
@@ -29,11 +29,11 @@ def age_in_seconds():
     sekundy = wiek*365*24*60*60
     print("No, you're ", sekundy," seconds old")
 
-#Początek
+#początek
 print("Hello, I need to interrupt you. Sorry, I know that you might be busy but... \n I just need to do my homework.")
 odpowiedz = input("Do you want to flip a coin? ")
-if odpowiedz("yes"):
+if odpowiedz == "yes":
     heads_or_tails()
-if odpowiedz("no"):
+if odpowiedz == "no":
     convert_temperature()
 input("Goodbye you old looser")
