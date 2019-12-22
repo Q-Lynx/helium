@@ -5,7 +5,7 @@ def heads_or_tails():
     rzut = ["head", "tail"]
     wynik = random.choice(rzut)
     print(wynik)
-
+    convert_temperature()
 #Temperature Converter
 def convert_temperature():
     odpowiedz2 = input("Do you want to convert temperature? ")
