@@ -21,6 +21,6 @@ liczba = input("enter the number: ")
 liczba = int(liczba)
 
 while liczba > 1:
-    dzialanie(liczba)
+    liczba = dzialanie(liczba)
 else:
     print(liczba, "koniec")
