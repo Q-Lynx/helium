@@ -1,0 +1,19 @@
+
+def dzialanie(liczba):
+    if liczba % 2 == 0:
+        liczba = liczba / 2
+    elif liczba % 2 != 0:
+        liczba = liczba * 3 + 1
+    elif liczba == 1:
+        liczba = liczba
+
+    return liczba
+
+
+liczba = input("enter the number: ")
+liczba = int(liczba)
+
+while liczba > 1:
+    dzialanie(liczba)
+else:
+    print(liczba, "koniec")
